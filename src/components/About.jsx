@@ -1,31 +1,30 @@
 function About() {
   return (
-    <section id="about" className="mx-auto max-w-6xl px-6 py-24">
-      <div className="grid gap-12 border-t border-white/10 pt-16 md:grid-cols-[0.8fr_1.2fr]">
+    <section id="about" className="mx-auto max-w-6xl px-6 pb-12 pt-14 font-mono">
+      <div className="grid gap-8 border-t border-white/10 pt-10 md:grid-cols-[0.85fr_1.15fr] md:gap-14">
         <div>
-          <p className="mb-4 border-l-2 border-green-400 pl-4 font-mono text-sm font-semibold uppercase tracking-[0.25em] text-green-400">
+          <p className="mb-4 border-l-2 border-green-400 pl-4 text-sm font-semibold uppercase tracking-[0.25em] text-green-400">
             À propos
           </p>
 
-          <h2 className="font-mono text-4xl font-bold text-white md:text-5xl">
+          <h2 className="max-w-md text-3xl font-bold leading-tight text-white md:text-4xl">
             Du script à l’application.
           </h2>
         </div>
 
-        <div className="space-y-6 font-mono text-base leading-8 text-zinc-400">
+        <div className="space-y-3 text-sm leading-6 text-zinc-400 md:text-base md:leading-7">
           <p>
-            Après plusieurs années à développer des outils de collecte et de traitement de données en Python,
-            j’ai choisi d’élargir mes compétences vers le développement backend moderne et les applications web.
+            Je transforme des flux de données en services backend fiables : collecte, normalisation,
+            stockage et exposition par API.
           </p>
 
           <p>
-            Aujourd’hui, je me spécialise dans la conception d’API, l’automatisation, les bases de données
-            et le déploiement d’applications robustes.
+            Je privilégie la qualité du code, la maintenabilité et des architectures simples,
+            adaptées au besoin réel.
           </p>
 
           <p>
-            Mon objectif est de construire des outils utiles, maintenables et compréhensibles, avec une attention
-            particulière portée à la qualité du code, à la documentation et à l’évolution des projets.
+            Mon objectif : livrer des outils utiles, robustes et faciles à faire évoluer.
           </p>
         </div>
       </div>

@@ -4,6 +4,7 @@ import FeaturedProject from './components/FeaturedProject'
 import About from './components/About'
 import Stack from './components/Stack'
 import Timeline from './components/Timeline'
+import Contact from './components/Contact'
 
 function App() {
   return (
@@ -12,8 +13,9 @@ function App() {
       <Hero />
       <About />
       <FeaturedProject />
-      <Stack />
       <Timeline />
+      <Stack />
+      <Contact />
     </main>
   )
 }

@@ -1,64 +1,88 @@
+import soundspotImage from '../assets/soundspot.png'
+
+const projectHighlights = [
+  ['01', 'Agrégation multi-sources'],
+  ['02', 'Recherche d’événements'],
+  ['03', 'Cartographie interactive'],
+]
+
 function FeaturedProject() {
-    return (
-      <section id="projects" className="mx-auto max-w-6xl px-6 py-24">
-        <div className="mb-10">
-          <p className="text-sm font-medium uppercase tracking-[0.3em] text-cyan-400">
-            Projet phare
-          </p>
-  
-          <h2 className="mt-3 text-3xl font-bold text-white md:text-5xl">
-            SoundSpot
-          </h2>
-  
-          <p className="mt-4 max-w-2xl text-zinc-400">
-            Une application web de découverte d’événements musicaux via une carte interactive,
-            connectée à plusieurs sources de données événementielles.
+  return (
+    <section id="projects" className="mx-auto max-w-6xl px-6 pb-12 font-mono">
+      <div className="border-t border-white/10 pt-10 md:pt-12">
+        <div className="grid gap-5 md:grid-cols-[0.7fr_1.3fr] md:items-end">
+          <div>
+            <p className="border-l-2 border-green-400 pl-4 text-sm font-semibold uppercase tracking-[0.25em] text-green-400">
+              Projet phare
+            </p>
+            <h2 className="mt-2 text-4xl font-bold text-white md:text-5xl">SoundSpot</h2>
+          </div>
+
+          <p className="max-w-2xl text-sm leading-6 text-zinc-400 md:justify-self-end md:text-base md:leading-7">
+            Une application déployée qui agrège des événements musicaux et permet de les rechercher
+            sur une carte interactive.
           </p>
         </div>
-  
-        <div className="grid gap-6 rounded-3xl border border-white/10 bg-white/[0.03] p-6 md:grid-cols-2">
-          <div>
-            <div className="mb-6 flex flex-wrap gap-2">
-              {['React', 'FastAPI', 'PostgreSQL', 'API externes', 'Map'].map((tech) => (
+
+        <article className="mt-7 grid overflow-hidden border border-white/10 bg-white/[0.025] lg:grid-cols-[1.2fr_1fr]">
+          <div className="flex flex-col p-5 sm:p-6 lg:p-7">
+            <div className="flex flex-wrap gap-2">
+              {['FastAPI', 'PostgreSQL', 'Docker', 'OpenStreetMap', 'Leaflet'].map((tech) => (
                 <span
                   key={tech}
-                  className="rounded-full border border-white/10 px-3 py-1 text-xs text-zinc-300"
+                  className="rounded-full border border-green-400/20 bg-green-400/[0.04] px-3 py-1.5 text-xs text-zinc-300"
                 >
                   {tech}
                 </span>
               ))}
             </div>
-  
-            <h3 className="text-2xl font-semibold text-white">
-              Une carte pour trouver rapidement des événements autour de soi.
+
+            <h3 className="mt-5 text-xl font-bold leading-snug text-white md:text-2xl">
+              De plusieurs sources à une recherche unifiée.
             </h3>
-  
-            <p className="mt-4 leading-7 text-zinc-400">
-              SoundSpot centralise des événements issus de différentes plateformes, les normalise
-              côté backend, puis les affiche sur une interface cartographique pensée pour être
-              rapide, lisible et agréable à utiliser.
+
+            <p className="mt-3 text-sm leading-6 text-zinc-400">
+              FastAPI orchestre l’agrégation et la normalisation des données avant leur stockage
+              dans PostgreSQL. Docker assure un déploiement reproductible.
             </p>
-          </div>
-  
-          <div className="rounded-2xl border border-white/10 bg-zinc-900 p-4">
-            <div className="flex items-center gap-2 border-b border-white/10 pb-3">
-              <span className="h-3 w-3 rounded-full bg-red-400" />
-              <span className="h-3 w-3 rounded-full bg-yellow-400" />
-              <span className="h-3 w-3 rounded-full bg-green-400" />
+
+            <div className="mt-5 divide-y divide-white/10 border-y border-white/10">
+              {projectHighlights.map(([number, title]) => (
+                <div key={title} className="flex items-center gap-4 py-2.5">
+                  <span className="text-[10px] text-green-400">{number}</span>
+                  <p className="text-xs font-medium text-zinc-300 sm:text-sm">{title}</p>
+                </div>
+              ))}
             </div>
-  
-            <div className="mt-4 h-64 rounded-xl bg-zinc-800 p-4">
-              <div className="mb-4 h-10 rounded-full bg-zinc-700" />
-              <div className="grid h-44 grid-cols-3 gap-3">
-                <div className="rounded-xl bg-zinc-700" />
-                <div className="rounded-xl bg-zinc-700/70" />
-                <div className="rounded-xl bg-zinc-700/40" />
-              </div>
-            </div>
+
+            <a
+              href="https://soundspot.app"
+              target="_blank"
+              rel="noreferrer"
+              className="mt-5 inline-flex w-fit items-center gap-3 border border-green-400 bg-green-400/10 px-5 py-3 text-sm font-semibold text-green-400 transition hover:bg-green-400 hover:text-zinc-950"
+            >
+              Voir le projet
+              <span aria-hidden="true">↗</span>
+            </a>
           </div>
-        </div>
-      </section>
-    )
-  }
-  
-  export default FeaturedProject
+
+          <a
+            href="https://soundspot.app"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Ouvrir l’application SoundSpot"
+            className="group flex h-80 items-center justify-center overflow-hidden border-t border-white/10 bg-zinc-900/60 p-3 sm:h-96 lg:h-[460px] lg:border-l lg:border-t-0"
+          >
+            <img
+              src={soundspotImage}
+              alt="Interface de SoundSpot avec recherche d’événements et carte interactive"
+              className="h-full w-full object-contain transition duration-500 ease-out group-hover:scale-[1.015] group-hover:opacity-95"
+            />
+          </a>
+        </article>
+      </div>
+    </section>
+  )
+}
+
+export default FeaturedProject
