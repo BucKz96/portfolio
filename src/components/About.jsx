@@ -1,32 +1,31 @@
 function About() {
   return (
     <section id="about" className="mx-auto max-w-6xl px-6 py-24">
-      <div className="grid gap-10 md:grid-cols-[1fr_1.5fr]">
+      <div className="grid gap-12 border-t border-white/10 pt-16 md:grid-cols-[0.8fr_1.2fr]">
         <div>
-          <p className="text-sm font-medium uppercase tracking-[0.3em] text-cyan-400">
+          <p className="mb-4 border-l-2 border-green-400 pl-4 font-mono text-sm font-semibold uppercase tracking-[0.25em] text-green-400">
             À propos
           </p>
 
-          <h2 className="mt-3 text-3xl font-bold text-white md:text-5xl">
-            Un profil orienté produit, backend et apprentissage rapide.
+          <h2 className="font-mono text-4xl font-bold text-white md:text-5xl">
+            Du script à l’application.
           </h2>
         </div>
 
-        <div className="space-y-6 text-lg leading-8 text-zinc-400">
+        <div className="space-y-6 font-mono text-base leading-8 text-zinc-400">
           <p>
-            Je suis développeur full stack en formation, avec une forte attirance pour le backend,
-            les APIs, l’intégration de données et les applications web utiles.
+            Après plusieurs années à développer des outils de collecte et de traitement de données en Python,
+            j’ai choisi d’élargir mes compétences vers le développement backend moderne et les applications web.
           </p>
 
           <p>
-            Mon projet principal, SoundSpot, m’a permis de travailler sur une vraie logique produit :
-            récupération de données externes, normalisation, affichage cartographique, UX, déploiement
-            et amélioration progressive de l’interface.
+            Aujourd’hui, je me spécialise dans la conception d’API, l’automatisation, les bases de données
+            et le déploiement d’applications robustes.
           </p>
 
           <p>
-            Mon objectif est de construire des applications propres, compréhensibles et maintenables,
-            tout en progressant sur des technologies modernes comme React, FastAPI, Docker et PostgreSQL.
+            Mon objectif est de construire des outils utiles, maintenables et compréhensibles, avec une attention
+            particulière portée à la qualité du code, à la documentation et à l’évolution des projets.
           </p>
         </div>
       </div>

@@ -1,39 +1,55 @@
-const technologies = [
-    'Python',
-    'FastAPI',
-    'React',
-    'Tailwind CSS',
-    'PostgreSQL',
-    'Docker',
-    'Git',
-    'Vercel',
-    'Render',
-    'APIs REST',
-  ]
-  
-  function Stack() {
-    return (
-      <section id="stack" className="mx-auto max-w-6xl px-6 py-24">
-        <p className="text-sm font-medium uppercase tracking-[0.3em] text-cyan-400">
-          Stack
-        </p>
-  
-        <h2 className="mt-3 text-3xl font-bold text-white md:text-5xl">
-          Les technologies que j’utilise.
-        </h2>
-  
-        <div className="mt-10 grid gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
-          {technologies.map((tech) => (
-            <div
-              key={tech}
-              className="rounded-2xl border border-white/10 bg-white/[0.03] p-5 text-center text-sm font-medium text-zinc-300"
-            >
-              {tech}
+const stackGroups = [
+  {
+    title: 'Backend',
+    items: ['Python', 'FastAPI', 'Flask', 'API REST'],
+  },
+  {
+    title: 'Données',
+    items: ['PostgreSQL', 'MySQL', 'MongoDB', 'Pandas'],
+  },
+  {
+    title: 'DevOps',
+    items: ['Docker', 'Linux', 'Git', 'GitHub Actions'],
+  },
+  {
+    title: 'Frontend',
+    items: ['React', 'JavaScript', 'HTML', 'CSS'],
+  },
+]
+
+function Stack() {
+  return (
+    <section id="stack" className="mx-auto max-w-6xl px-6 py-24">
+      <p className="mb-4 border-l-2 border-green-400 pl-4 font-mono text-sm font-semibold uppercase tracking-[0.25em] text-green-400">
+        Stack
+      </p>
+
+      <h2 className="font-mono text-4xl font-bold text-white md:text-5xl">
+        Technologies principales.
+      </h2>
+
+      <div className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
+        {stackGroups.map((group) => (
+          <div key={group.title} className="border border-white/10 bg-white/[0.03] p-6">
+            <h3 className="font-mono text-lg font-semibold text-white">
+              {group.title}
+            </h3>
+
+            <div className="mt-5 flex flex-wrap gap-2">
+              {group.items.map((item) => (
+                <span
+                  key={item}
+                  className="border border-white/10 bg-zinc-950/60 px-3 py-2 font-mono text-xs text-zinc-300"
+                >
+                  {item}
+                </span>
+              ))}
             </div>
-          ))}
-        </div>
-      </section>
-    )
-  }
-  
-  export default Stack
+          </div>
+        ))}
+      </div>
+    </section>
+  )
+}
+
+export default Stack

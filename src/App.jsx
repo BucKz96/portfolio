@@ -3,6 +3,7 @@ import Hero from './components/Hero'
 import FeaturedProject from './components/FeaturedProject'
 import About from './components/About'
 import Stack from './components/Stack'
+import Timeline from './components/Timeline'
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <About />
       <FeaturedProject />
       <Stack />
+      <Timeline />
     </main>
   )
 }
