@@ -2,7 +2,7 @@ import heroImage from '../assets/hero.png'
 
 function Hero() {
   return (
-    <section className="relative h-screen min-h-[760px] overflow-hidden bg-zinc-950">
+    <section id="home" className="relative h-screen min-h-[760px] overflow-hidden bg-zinc-950">
       <div className="absolute right-0 top-0 h-screen w-[45vw] overflow-hidden">
         <img
           src={heroImage}

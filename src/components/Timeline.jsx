@@ -35,7 +35,7 @@ const timelineItems = [
 
 function Timeline() {
   return (
-    <section className="mx-auto max-w-6xl px-6 pb-12 font-mono">
+    <section id="timeline" className="mx-auto max-w-6xl px-6 pb-12 font-mono">
       <div className="border-t border-white/10 pt-10 md:pt-12">
         <p className="mb-4 border-l-2 border-green-400 pl-4 text-sm font-semibold uppercase tracking-[0.25em] text-green-400">
           Parcours
