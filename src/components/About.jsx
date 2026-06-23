@@ -1,13 +1,13 @@
 function About() {
   return (
-    <section id="about" className="mx-auto max-w-6xl px-6 pb-12 pt-14 font-mono">
+    <section id="about" className="mx-auto max-w-6xl scroll-mt-[112px] px-6 pb-12 pt-14">
       <div className="grid gap-8 border-t border-white/10 pt-10 md:grid-cols-[0.85fr_1.15fr] md:gap-14">
         <div>
-          <p className="mb-4 border-l-2 border-green-400 pl-4 text-sm font-semibold uppercase tracking-[0.25em] text-green-400">
+          <p className="mb-4 border-l-2 border-[color:var(--terminal-green)] pl-4 font-mono text-sm font-semibold uppercase tracking-[0.25em] text-[color:var(--terminal-green)]">
             À propos
           </p>
 
-          <h2 className="max-w-md text-3xl font-bold leading-tight text-white md:text-4xl">
+          <h2 className="max-w-md font-display text-3xl font-bold leading-tight text-white md:text-4xl">
             Du script à l’application.
           </h2>
         </div>

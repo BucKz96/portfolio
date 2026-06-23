@@ -35,32 +35,32 @@ const timelineItems = [
 
 function Timeline() {
   return (
-    <section className="mx-auto max-w-6xl px-6 pb-12 font-mono">
+    <section id="timeline" className="mx-auto max-w-6xl scroll-mt-[112px] px-6 pb-12">
       <div className="border-t border-white/10 pt-10 md:pt-12">
-        <p className="mb-4 border-l-2 border-green-400 pl-4 text-sm font-semibold uppercase tracking-[0.25em] text-green-400">
+        <p className="mb-4 border-l-2 border-[color:var(--terminal-green)] pl-4 font-mono text-sm font-semibold uppercase tracking-[0.25em] text-[color:var(--terminal-green)]">
           Parcours
         </p>
 
-        <h2 className="text-3xl font-bold text-white md:text-4xl">
+        <h2 className="font-display text-3xl font-bold text-white md:text-4xl">
           Expériences & formation.
         </h2>
 
-        <div className="relative mt-7 before:absolute before:bottom-6 before:left-1 before:top-[1.75rem] before:w-px before:bg-green-400/30 md:before:top-[1.95rem]">
+        <div className="relative mt-7 before:absolute before:bottom-6 before:left-1 before:top-[1.75rem] before:w-px before:bg-[rgb(var(--terminal-green-rgb)/0.30)] md:before:top-[1.95rem]">
           {timelineItems.map((item) => (
             <article
               key={`${item.period}-${item.title}`}
               className="relative grid gap-2 py-4 pl-7 md:grid-cols-[0.17fr_1fr] md:gap-6 md:py-5"
             >
-              <span className="absolute left-1 top-[1.72rem] h-px w-5 bg-green-400/30 md:top-[1.92rem]" />
-              <span className="absolute left-0 top-[1.45rem] h-2.5 w-2.5 rounded-full border border-green-400/70 bg-zinc-950 md:top-[1.65rem]" />
+              <span className="absolute left-1 top-[1.72rem] h-px w-5 bg-[rgb(var(--terminal-green-rgb)/0.30)] md:top-[1.92rem]" />
+              <span className="absolute left-0 top-[1.45rem] h-2.5 w-2.5 rounded-full border border-[color:rgb(var(--terminal-green-rgb)/0.70)] bg-zinc-950 md:top-[1.65rem]" />
 
-              <p className="pt-0.5 text-[10px] font-medium uppercase tracking-wider text-green-400 md:text-[11px]">
+              <p className="pt-0.5 font-mono text-[10px] font-medium uppercase tracking-wider text-[color:var(--terminal-green)] md:text-[11px]">
                 {item.period}
               </p>
 
               <div>
                 <div className="flex flex-col gap-0.5 sm:flex-row sm:items-baseline sm:gap-3">
-                  <h3 className="text-lg font-bold text-white md:text-xl">{item.title}</h3>
+                  <h3 className="font-display text-lg font-bold text-white md:text-xl">{item.title}</h3>
                   <p className="text-xs font-semibold text-zinc-400 sm:text-sm">@ {item.company}</p>
                 </div>
 
@@ -72,7 +72,7 @@ function Timeline() {
                   {item.stack.map((tech) => (
                     <span
                       key={tech}
-                      className="border border-white/10 bg-white/[0.025] px-2 py-1 text-[11px] text-zinc-400"
+                      className="border border-white/10 bg-white/[0.025] px-2 py-1 font-mono text-[11px] text-zinc-400"
                     >
                       {tech}
                     </span>

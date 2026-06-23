@@ -5,6 +5,7 @@ import About from './components/About'
 import Stack from './components/Stack'
 import Timeline from './components/Timeline'
 import Contact from './components/Contact'
+import Footer from './components/Footer'
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Timeline />
       <Stack />
       <Contact />
+      <Footer />
     </main>
   )
 }
