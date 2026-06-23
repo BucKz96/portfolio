@@ -2,21 +2,9 @@ import heroImage from '../assets/hero.png'
 
 function Hero() {
   return (
-    <section id="home" className="relative h-screen min-h-[760px] scroll-mt-[112px] overflow-hidden bg-zinc-950">
-      <div className="absolute right-0 top-0 h-screen w-[45vw] overflow-hidden">
-        <img
-          src={heroImage}
-          alt="Portrait noir et blanc de Maxime"
-          className="h-full w-full object-cover object-[82%_35%] grayscale"
-        />
-
-        <div className="absolute inset-0 bg-gradient-to-r from-zinc-950 via-zinc-950/1 to-transparent" />
-        <div className="absolute inset-0 bg-gradient-to-b from-zinc-950/10 via-transparent to-zinc-950/85" />
-        <div className="absolute inset-0 bg-zinc-950/10" />
-      </div>
-
-      <div className="relative z-10 mx-auto flex h-full max-w-6xl items-center px-6">
-        <div className="max-w-xl -translate-y-1">
+    <section id="home" className="relative h-[calc(100vh-80px)] min-h-[680px] max-h-[760px] scroll-mt-[112px] overflow-hidden bg-zinc-950">
+      <div className="relative z-10 mx-auto grid h-full w-full max-w-6xl items-center px-6 lg:grid-cols-[minmax(0,1fr)_500px] xl:grid-cols-[minmax(0,1fr)_520px]">
+        <div className="relative z-20 max-w-xl translate-y-25">
           <p className="mb-5 border-l-2 border-[color:var(--terminal-green)] pl-4 font-mono text-sm font-semibold uppercase tracking-[0.25em] text-[color:var(--terminal-green)]">
             Backend Python Developer
           </p>
@@ -63,6 +51,20 @@ function Hero() {
               build clean&nbsp;&nbsp;||&nbsp;&nbsp;deploy smart&nbsp;&nbsp;||&nbsp;&nbsp;scale fast
             </span>
           </div>
+        </div>
+
+        <div className="absolute inset-y-0 right-6 hidden w-[62%] overflow-hidden lg:block xl:w-[60%] 2xl:w-[58%]">
+          <img
+            src={heroImage}
+            alt="Portrait noir et blanc de Maxime"
+            className="h-full w-full origin-top scale-[1.25] object-cover object-top grayscale"
+          />
+
+          <div className="absolute inset-y-0 left-0 w-[45%] bg-gradient-to-r from-zinc-950 via-zinc-950/85 to-transparent" />
+          <div className="absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-zinc-950 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-b from-zinc-950/10 via-transparent to-zinc-950/85" />
+          <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-zinc-950 to-transparent" />
+          <div className="absolute inset-0 bg-zinc-950/10" />
         </div>
       </div>
     </section>
