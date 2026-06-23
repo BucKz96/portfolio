@@ -1,7 +1,22 @@
 @import "tailwindcss";
 
+:root {
+  --terminal-green: #00DC2D;
+  --terminal-green-rgb: 0 220 45;
+}
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
 html {
   scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
 }
 
 section {
@@ -9,7 +24,7 @@ section {
 }
 
 :where(a, button):focus-visible {
-  outline: 2px solid rgb(74 222 128 / 0.75);
+  outline: 2px solid rgb(var(--terminal-green-rgb) / 0.75);
   outline-offset: 3px;
 }
 
