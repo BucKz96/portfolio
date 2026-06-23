@@ -3,7 +3,7 @@ const contactLinks = [
     label: 'GitHub',
     value: 'Voir le profil',
     mark: 'GH',
-    href: 'https://github.com/',
+    href: 'https://github.com/BucKz96',
     external: true,
   },
   {
@@ -76,10 +76,12 @@ function Contact() {
           )}
         </div>
 
-        <div className="mt-12 flex items-center gap-3 text-[10px] uppercase tracking-[0.2em] text-zinc-600">
-          <span className="h-px flex-1 bg-white/10" />
-          <span>Disponible pour échanger</span>
-          <span className="h-2 w-2 rounded-full bg-green-400" />
+        <div className="relative mt-12 flex items-center justify-center text-[10px] uppercase tracking-[0.2em] text-zinc-600">
+          <span className="absolute inset-x-0 h-px bg-white/10" />
+          <span className="relative flex items-center gap-3 bg-zinc-950 px-3">
+            <span>Disponible pour échanger</span>
+            <span className="h-2 w-2 rounded-full bg-green-400" />
+          </span>
         </div>
       </div>
     </section>

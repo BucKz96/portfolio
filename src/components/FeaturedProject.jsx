@@ -55,15 +55,25 @@ function FeaturedProject() {
               ))}
             </div>
 
-            <a
-              href="https://soundspot.app"
-              target="_blank"
-              rel="noreferrer"
-              className="mt-5 inline-flex w-fit items-center gap-3 border border-green-400 bg-green-400/10 px-5 py-3 text-sm font-semibold text-green-400 transition hover:bg-green-400 hover:text-zinc-950"
-            >
-              Voir le projet
-              <span aria-hidden="true">↗</span>
-            </a>
+            <div className="mt-5 flex flex-wrap gap-3">
+              <a
+                href="https://soundspot.app"
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex w-fit items-center gap-3 border border-green-400 bg-green-400/10 px-5 py-3 text-sm font-semibold text-green-400 transition hover:bg-green-400 hover:text-zinc-950"
+              >
+                Voir le projet
+                <span aria-hidden="true">↗</span>
+              </a>
+              <a
+                href="https://github.com/BucKz96/SoundSpot"
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex w-fit items-center border border-white/15 px-5 py-3 text-sm font-semibold text-zinc-300 transition hover:border-green-400/40 hover:text-green-400"
+              >
+                Voir le code
+              </a>
+            </div>
           </div>
 
           <a
@@ -76,6 +86,8 @@ function FeaturedProject() {
             <img
               src={soundspotImage}
               alt="Interface de SoundSpot avec recherche d’événements et carte interactive"
+              loading="lazy"
+              decoding="async"
               className="h-full w-full object-contain transition duration-500 ease-out group-hover:scale-[1.015] group-hover:opacity-95"
             />
           </a>

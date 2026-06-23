@@ -59,6 +59,7 @@ function Navbar() {
             <a
               key={id}
               href={`#${id}`}
+              aria-current={activeSection === id ? 'location' : undefined}
               className={`transition hover:text-green-400 ${activeSection === id ? 'text-green-400' : 'text-zinc-400'}`}
             >
               {label}
