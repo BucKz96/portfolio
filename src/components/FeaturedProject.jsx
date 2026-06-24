@@ -27,7 +27,7 @@ function FeaturedProject() {
               />
             </div>
 
-            <p className="max-w-2xl text-sm leading-6 text-zinc-400 md:justify-self-end md:text-base md:leading-7">
+            <p className="max-w-2xl text-center text-sm leading-6 text-zinc-400 md:justify-self-end md:text-left md:text-base md:leading-7">
               Une application déployée qui agrège des événements musicaux et permet de les rechercher
               sur une carte interactive.
             </p>
@@ -36,7 +36,7 @@ function FeaturedProject() {
 
         <article className="mt-7 grid overflow-hidden border border-white/10 bg-white/[0.025] lg:grid-cols-[1.2fr_1fr]">
           <div className="flex flex-col p-5 sm:p-6 lg:p-7">
-            <div className="flex flex-wrap gap-2">
+            <div className="flex flex-wrap justify-center gap-2 md:justify-start">
               {['FastAPI', 'PostgreSQL', 'Docker', 'OpenStreetMap', 'Leaflet'].map((tech) => (
                 <span
                   key={tech}

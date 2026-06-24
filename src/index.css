@@ -68,6 +68,12 @@ section {
   }
 }
 
+@media (max-width: 639px) {
+  .hero-terminal-cursor::after {
+    background: var(--terminal-green);
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;

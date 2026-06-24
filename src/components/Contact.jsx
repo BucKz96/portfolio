@@ -23,7 +23,7 @@ const contactLinks = [
 
 function Contact() {
   return (
-    <section id="contact" data-reveal className="mx-auto max-w-7xl scroll-mt-[112px] px-6 pb-24 md:pb-28">
+    <section id="contact" data-reveal className="mx-auto max-w-7xl scroll-mt-[112px] px-6 pb-10 md:pb-28">
       <div className="border-t border-white/10 pt-10 md:pt-12">
         <p className="mb-4 border-l-2 border-[color:var(--terminal-green)] pl-4 font-mono text-sm font-semibold uppercase tracking-[0.25em] text-[color:var(--terminal-green)]">
           Contact

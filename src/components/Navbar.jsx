@@ -11,6 +11,7 @@ const navLinks = [
 
 function Navbar() {
   const [activeSection, setActiveSection] = useState('home')
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
   useEffect(() => {
     const updateActiveSection = () => {
@@ -46,10 +47,11 @@ function Navbar() {
 
   return (
     <header className="fixed left-0 top-0 z-50 w-full border-b border-white/10 bg-[#050505]/90 backdrop-blur-md">
-      <nav className="relative h-16 px-8">
+      <nav className="relative h-16 px-4 sm:px-8">
         <a
           href="#home"
-          className="absolute left-8 top-1/2 flex -translate-y-1/2 items-center"
+          className="absolute left-4 top-1/2 flex -translate-y-1/2 items-center sm:left-8"
+          onClick={() => setIsMobileMenuOpen(false)}
         >
           <img
             src="/logo.png"
@@ -70,6 +72,35 @@ function Navbar() {
             </a>
           ))}
         </div>
+
+        <button
+          type="button"
+          aria-expanded={isMobileMenuOpen}
+          aria-controls="mobile-navigation"
+          onClick={() => setIsMobileMenuOpen((isOpen) => !isOpen)}
+          className="absolute right-4 top-1/2 -translate-y-1/2 border border-white/15 px-3 py-2 font-mono text-xs text-zinc-300 transition hover:border-[color:rgb(var(--terminal-green-rgb)/0.40)] hover:text-[color:var(--terminal-green)] md:hidden"
+        >
+          Menu
+        </button>
+
+        {isMobileMenuOpen && (
+          <div
+            id="mobile-navigation"
+            className="absolute inset-x-0 top-full grid border-b border-white/10 bg-[#050505] px-4 py-3 font-mono text-sm shadow-[0_12px_24px_rgba(0,0,0,0.35)] md:hidden"
+          >
+            {navLinks.map(([id, label]) => (
+              <a
+                key={id}
+                href={`#${id}`}
+                aria-current={activeSection === id ? 'location' : undefined}
+                onClick={() => setIsMobileMenuOpen(false)}
+                className={`border-b border-white/[0.06] px-2 py-3 transition last:border-b-0 hover:text-[color:var(--terminal-green)] ${activeSection === id ? 'text-[color:var(--terminal-green)]' : 'text-zinc-400'}`}
+              >
+                {label}
+              </a>
+            ))}
+          </div>
+        )}
       </nav>
     </header>
   )
