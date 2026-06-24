@@ -12,15 +12,23 @@ const timelineItems = [
     title: 'Data Analyst',
     company: 'DiamPark',
     description:
-      'Construction d’indicateurs patients, visualisations Plotly et contribution au backend Flask et à la chaîne de livraison.',
+      'Analyse de données patients, création de visualisations d’indicateurs et contribution backend sur une application médicale de suivi de la maladie de Parkinson.',
     stack: ['Python', 'Flask', 'SQL', 'Plotly', 'Docker', 'GitHub Actions'],
+  },
+  {
+    period: '2021 — 2022',
+    title: 'Data & Intelligence Artificielle',
+    company: '3WAcademy — Distanciel',
+    description:
+      'Formation orientée analyse de données, machine learning et visualisation avec Python, Pandas, NumPy, Scikit-learn et TensorFlow.',
+    stack: ['Python', 'Pandas', 'NumPy', 'Scikit-learn', 'TensorFlow', 'DataViz'],
   },
   {
     period: '2018 — 2021',
     title: 'Freelance Web Scraping',
     company: 'AddSome',
     description:
-      'Automatisation de pipelines de scraping et traitement de données e-commerce à grande échelle.',
+      'Automatisation de pipelines de collecte, extraction et structuration de données web, avec maintenance des scripts selon l’évolution des sources.',
     stack: ['Python', 'Selenium', 'Regex', 'XPath', 'MongoDB', 'Pandas'],
   },
   {
@@ -28,14 +36,14 @@ const timelineItems = [
     title: 'Développeur Python',
     company: 'Simplon.co',
     description:
-      'Développement Python et modélisation de bases SQL et NoSQL, validés par des certifications RNCP.',
-    stack: ['Python', 'SQL', 'MongoDB', 'Oracle', 'PostgreSQL'],
+      'Développement Python et modélisation de bases SQL/NoSQL, validés par les certifications RNCP RS3508 / RS3497.',
+    stack: ['Python', 'SQL', 'MongoDB', 'Oracle', 'PostgreSQL', 'RNCP'],
   },
 ]
 
 function Timeline() {
   return (
-    <section id="timeline" className="mx-auto max-w-6xl scroll-mt-[112px] px-6 pb-12">
+    <section id="timeline" data-reveal className="mx-auto max-w-7xl scroll-mt-[112px] px-6 pb-12">
       <div className="border-t border-white/10 pt-10 md:pt-12">
         <p className="mb-4 border-l-2 border-[color:var(--terminal-green)] pl-4 font-mono text-sm font-semibold uppercase tracking-[0.25em] text-[color:var(--terminal-green)]">
           Parcours
