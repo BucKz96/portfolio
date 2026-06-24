@@ -9,7 +9,7 @@ const projectHighlights = [
 
 function FeaturedProject() {
   return (
-    <section id="projects" className="mx-auto max-w-6xl scroll-mt-[112px] px-6 pb-12">
+    <section id="projects" data-reveal className="mx-auto max-w-7xl scroll-mt-[112px] px-6 pb-12">
       <div className="border-t border-white/10 pt-10 md:pt-12">
         <div>
           <p className="border-l-2 border-[color:var(--terminal-green)] pl-4 font-mono text-sm font-semibold uppercase tracking-[0.25em] text-[color:var(--terminal-green)]">

@@ -1,6 +1,6 @@
 function About() {
   return (
-    <section id="about" className="mx-auto max-w-6xl scroll-mt-[112px] px-6 pb-12 pt-14">
+    <section id="about" className="mx-auto max-w-7xl scroll-mt-[112px] px-6 pb-12 pt-14">
       <div className="grid gap-8 border-t border-white/10 pt-10 md:grid-cols-[0.85fr_1.15fr] md:gap-14">
         <div>
           <p className="mb-4 border-l-2 border-[color:var(--terminal-green)] pl-4 font-mono text-sm font-semibold uppercase tracking-[0.25em] text-[color:var(--terminal-green)]">

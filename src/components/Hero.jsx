@@ -3,7 +3,7 @@ import heroImage from '../assets/hero.png'
 function Hero() {
   return (
     <section id="home" className="relative h-[calc(100vh-80px)] min-h-[680px] max-h-[760px] scroll-mt-[112px] overflow-hidden bg-zinc-950">
-      <div className="relative z-10 mx-auto grid h-full w-full max-w-6xl items-center px-6 lg:grid-cols-[minmax(0,1fr)_500px] xl:grid-cols-[minmax(0,1fr)_520px]">
+      <div className="relative z-10 mx-auto grid h-full w-full max-w-7xl items-center px-6 lg:grid-cols-[minmax(0,1fr)_500px] xl:grid-cols-[minmax(0,1fr)_520px]">
         <div className="relative z-20 max-w-xl translate-y-25">
           <p className="mb-5 border-l-2 border-[color:var(--terminal-green)] pl-4 font-mono text-sm font-semibold uppercase tracking-[0.25em] text-[color:var(--terminal-green)]">
             Backend Python Developer
@@ -47,7 +47,7 @@ function Hero() {
 
           <div className="mt-8 inline-flex border border-white/10 bg-zinc-950/50 px-4 py-3 font-mono text-xs text-zinc-400">
             <span className="text-[color:var(--terminal-green)]">$</span>
-            <span className="ml-2">
+            <span className="terminal-cursor ml-2">
               build clean&nbsp;&nbsp;||&nbsp;&nbsp;deploy smart&nbsp;&nbsp;||&nbsp;&nbsp;scale fast
             </span>
           </div>

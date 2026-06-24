@@ -23,7 +23,7 @@ const contactLinks = [
 
 function Contact() {
   return (
-    <section id="contact" className="mx-auto max-w-6xl scroll-mt-[112px] px-6 pb-24 md:pb-28">
+    <section id="contact" data-reveal className="mx-auto max-w-7xl scroll-mt-[112px] px-6 pb-24 md:pb-28">
       <div className="border-t border-white/10 pt-10 md:pt-12">
         <p className="mb-4 border-l-2 border-[color:var(--terminal-green)] pl-4 font-mono text-sm font-semibold uppercase tracking-[0.25em] text-[color:var(--terminal-green)]">
           Contact
@@ -34,7 +34,8 @@ function Contact() {
             Discutons de votre projet.
           </h2>
           <p className="mt-4 text-sm leading-7 text-zinc-400 md:text-base">
-            Disponible pour une alternance, un poste backend junior ou des projets freelance.
+            Disponible pour une alternance développeur backend / full stack, rythme 3 semaines
+            entreprise / 1 semaine formation, ainsi que pour des projets freelance ciblés.
           </p>
         </div>
 
@@ -46,7 +47,7 @@ function Contact() {
                 href={link.href}
                 target="_blank"
                 rel="noreferrer"
-                className="group relative flex min-h-24 items-center gap-4 overflow-hidden border border-white/10 bg-white/[0.025] p-4 transition duration-300 hover:-translate-y-0.5 hover:border-[color:rgb(var(--terminal-green-rgb)/0.35)] hover:shadow-[0_0_24px_rgb(var(--terminal-green-rgb)/0.04)]"
+                className="group relative flex min-h-24 items-center gap-4 overflow-hidden border border-white/10 bg-white/[0.025] p-4 transition-all duration-200 motion-safe:hover:-translate-y-1 motion-reduce:transition-none hover:border-[color:rgb(var(--terminal-green-rgb)/0.35)] hover:shadow-[0_0_24px_rgb(var(--terminal-green-rgb)/0.04)]"
               >
                 <span className="absolute inset-0 bg-[rgb(var(--terminal-green-rgb)/0.04)] opacity-0 transition duration-300 group-hover:opacity-100" />
                 <span className="relative z-10 flex h-9 w-9 shrink-0 items-center justify-center border border-[color:rgb(var(--terminal-green-rgb)/0.25)] font-mono text-xs font-semibold text-[color:var(--terminal-green)] transition group-hover:border-[color:rgb(var(--terminal-green-rgb)/0.50)]">
@@ -62,7 +63,7 @@ function Contact() {
             ) : (
               <div
                 key={link.label}
-                className="group relative flex min-h-24 items-center gap-4 border border-white/10 bg-white/[0.025] p-4 transition duration-300 hover:border-[color:rgb(var(--terminal-green-rgb)/0.35)] hover:bg-[rgb(var(--terminal-green-rgb)/0.025)] hover:shadow-[0_0_24px_rgb(var(--terminal-green-rgb)/0.04)]"
+                className="group relative flex min-h-24 items-center gap-4 border border-white/10 bg-white/[0.025] p-4 transition-all duration-200 motion-safe:hover:-translate-y-1 motion-reduce:transition-none hover:border-[color:rgb(var(--terminal-green-rgb)/0.35)] hover:bg-[rgb(var(--terminal-green-rgb)/0.025)] hover:shadow-[0_0_24px_rgb(var(--terminal-green-rgb)/0.04)]"
               >
                 <span className="flex h-9 w-9 shrink-0 items-center justify-center border border-[color:rgb(var(--terminal-green-rgb)/0.25)] font-mono text-xs font-semibold text-[color:var(--terminal-green)]">
                   {link.mark}
