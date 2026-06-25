@@ -14,17 +14,18 @@ function About() {
 
         <div className="space-y-3 text-sm leading-6 text-zinc-400 md:text-base md:leading-7">
           <p>
-            Je transforme des flux de données en services backend fiables : collecte, normalisation,
-            stockage et exposition par API.
+            Dans mes expériences, j’ai automatisé la collecte de données, structuré des flux web
+            complexes et fiabilisé leur exploitation côté backend.
           </p>
 
           <p>
-            Je privilégie la qualité du code, la maintenabilité et des architectures simples,
-            adaptées au besoin réel.
+            J’ai contribué à des outils métiers où la donnée devait être propre, traçable et utile :
+            indicateurs patients, visualisations, API et pipelines de traitement.
           </p>
 
           <p>
-            Mon objectif : livrer des outils utiles, robustes et faciles à faire évoluer.
+            Mon approche : livrer des solutions simples à maintenir, pensées pour durer et évoluer
+            avec les besoins réels.
           </p>
         </div>
       </div>
